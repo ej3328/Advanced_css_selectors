@@ -18,23 +18,31 @@ div > ul > li:nth-child(3) {
 div > ol > li:nth-child(2) {
     font-weight: bold;
     margin-left: -5px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 div > ol > li:nth-child(4) {
     font-weight: bold;
     margin-left: -5px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
 div > div{
     background-color: red;
     width: 100px;
-    height: auto;
+    height: 100px;
 }
 
-div > div > div > p{
+div > div > p:nth-child(1){
+    font-style: italic;
+}
+
+div > div > div > p:nth-child(2){
+    color: white;
+}
+
+div > div > div > p:nth-child(3){
     color: white;
 }
 
@@ -52,11 +60,17 @@ button {
     align-items: center;
 }
 
-button:active {
-    background-color: antiquewhite;
+button:hover {
+    background-color: blue;
+    border-width: 1px;
 }
 
-button:hover {
-    background-color: bisque;
-    border-width: 3px;
+
+button:focus {
+    background-color: blue;
+    border-radius: 0px;
+    width: 200px;
+    height: 150px;
+
 }
+
